@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>ФК «КЗ ТАКТАШ» | Починки | Официальный сайт</title>
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Подключаем внешний CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <h2>FC <span>TAKTASH</span></h2>
+                <p>Починки | Вторая высшая — Восток</p>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-item">Главная</a></li>
+                <li><a href="#about" class="nav-item">О клубе</a></li>
+                <li><a href="#team" class="nav-item">Состав</a></li>
+                <li><a href="#matches" class="nav-item">Матчи</a></li>
+                <li><a href="#contact" class="nav-item">Контакты</a></li>
+            </ul>
+            <div class="burger" id="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1>ФК «КЗ ТАКТАШ» — Починки</h1>
+            <p>Вторая высшая лига, зона Восток • Сезон 2026<br>Деревня, где рождаются чемпионы!</p>
+            <a href="#about" class="btn">История клуба</a>
+            <a href="#contact" class="btn btn-outline" style="margin-left: 15px;">Запись на просмотр</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">О клубе</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>Футбольный клуб из деревни Починки</h3>
+                    <p>Основан в 1998 году, с 2024 года выступает во Второй высшей лиге (зона Восток). Команда — гордость местных жителей. Домашний стадион «Такташ-Арена» вмещает 1500 зрителей. Цель сезона 2026 — выход в Первую лигу.</p>
+                    <p><strong>Лига:</strong> Вторая высшая — зона Восток (Россия) • <strong>Год основания:</strong> 1998</p>
+                </div>
+                <div class="coach-card">
+                    <i class="fas fa-chalkboard-user"></i>
+                    <h3>Главный тренер</h3>
+                    <p style="font-size: 1.4rem; font-weight:800;">Валерий Сергеевич Морозов</p>
+                    <p>Заслуженный тренер России, опыт работы в ФНЛ. С «КЗ Такташ» с 2024 года. В первом же сезоне он почти привел нас к чемпионству, к сожалению в последнем матче мы уступили чемпионам в последнем матче и заняли второе место.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" style="background: #f4f7f2;">
+        <div class="container">
+            <h2 class="section-title">Состав команды (сезон 2026)</h2>
+            <div id="playersContainer" class="cards-grid"></div>
+        </div>
+    </section>
+
+    <section id="matches">
+        <div class="container">
+            <h2 class="section-title">Расписание матчей (каждая суббота)</h2>
+            <div id="matchesContainer" class="cards-grid"></div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Контакты и просмотр</h2>
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <h3><i class="fas fa-futbol"></i> Запись на просмотр</h3>
+                    <p style="margin-bottom: 15px;">Приходите на просмотр в молодёжную команду или основной состав. Заполните форму, и тренер с вами свяжется.</p>
+                    <form id="trialForm">
+                        <input type="text" id="trialName" placeholder="ФИО" required>
+                        <input type="text" id="trialAge" placeholder="Возраст" required>
+                        <input type="tel" id="trialPhone" placeholder="Номер телефона" required>
+                        <input type="text" id="trialPosition" placeholder="Амплуа (вратарь/защитник/полузащитник/нападающий)">
+                        <textarea rows="3" id="trialAchiev" placeholder="Небольшой футбольный опыт / достижения"></textarea>
+                        <button type="submit" class="btn" style="background:#1f6e43;">Отправить заявку</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Россия, деревня Починки, ул. Центральная, 10А (стадион «Такташ-Арена»)</p>
+                    <p><i class="fas fa-phone-alt"></i> <strong>Для записи на просмотр:</strong> +7 (910) 123-45-67 (спортивный директор)</p>
+                    <p><i class="fas fa-envelope"></i> fctaktash@mail.ru</p>
+                    <p><i class="fab fa-vk"></i> vk.com/fctaktash</p>
+                    <div class="trial-highlight">
+                        <i class="fas fa-calendar-check"></i> <strong>Просмотры:</strong> каждую среду с 16:00 до 18:00. При себе: паспорт, медицинская справка, форма.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Футбольный клуб «КЗ ТАКТАШ» (Починки) | Вторая высшая — зона Восток | Вместе к победам!</p>
+    </div>
+</footer>
+
+<div id="playerModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <i class="fas fa-shirt" style="font-size: 48px; color: #1f6e43;"></i>
+        <h3 id="modalName">Игрок</h3>
+        <p id="modalPos"></p>
+        <p id="modalDetails"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
